@@ -51,7 +51,7 @@ void loop() {
   digitalWrite(13, LOW);
  }
  delay(1000);
- if(current == 0){
+ if(current - start_instant <= (60*2)==0){
    Serial.println("STOP!!");
  }
 }
